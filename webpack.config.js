@@ -1,3 +1,5 @@
+const Terser = require("terser-webpack-plugin");
+
 module.exports = {
 	entry: './index.js',
 	output: {
@@ -10,6 +12,17 @@ module.exports = {
 			{
 				type: "javascript/esm"
 			}
+		]
+	},
+	optimization: {
+		minimizer: [
+			new Terser({
+				terserOptions: {
+					compress: {
+						passes: 2
+					}
+				}
+			})
 		]
 	},
 	devtool: 'source-map',

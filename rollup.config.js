@@ -8,6 +8,11 @@ export default {
 		sourcemap: true
 	},
 	plugins: [
-		terser()
+		terser({
+			toplevel: true,
+			compress: {
+				passes: 2
+			}
+		})
 	]
 };
