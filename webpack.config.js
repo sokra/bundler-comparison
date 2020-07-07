@@ -4,7 +4,8 @@ module.exports = {
 	entry: './index.js',
 	output: {
 		path: require('path').resolve('results'),
-		filename: 'webpack.js'
+		filename: 'webpack.js',
+		iife: false
 	},
 	module: {
 		rules: [
@@ -17,6 +18,7 @@ module.exports = {
 		minimizer: [
 			new Terser({
 				terserOptions: {
+					toplevel: true,
 					compress: {
 						passes: 2
 					}
