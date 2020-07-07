@@ -14,9 +14,9 @@ npm run build
 <!-- START -->
 |         | output size                                           |
 |---------|-------------------------------------------------------|
-| rollup  | ▉▉▉▉▉▉▉ 53.8 kB   |
-| webpack | ▉▉▉▉▉▉▉ 54.2 kB |
-| parcel  | ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 189 kB   |
+| rollup  | ▉▉▉▉▉▉▉ 51.8 kB   |
+| webpack | ▉▉▉▉▉▉▉ 51.6 kB |
+| parcel  | ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 172 kB   |
 <!-- END -->
 
 Note: Parcel gets a dramatically better outcome with the `--experimental-scope-hoisting` option (smaller than webpack, almost as small as Rollup). Parcel 2 enables this option automatically, but I couldn't get it to create a non-empty bundle.

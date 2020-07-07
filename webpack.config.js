@@ -4,8 +4,7 @@ module.exports = {
 	entry: './index.js',
 	output: {
 		path: require('path').resolve('results'),
-		filename: 'webpack.js',
-		libraryTarget: 'commonjs'
+		filename: 'webpack.js'
 	},
 	module: {
 		rules: [
